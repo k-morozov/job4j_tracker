@@ -7,6 +7,7 @@ public class Greeting {
         Scanner input = new Scanner(System.in);
         System.out.printf("What is your name?");
         String name = input.nextLine();
+
         System.out.println("Hello " + name);
     }
 }
