@@ -6,6 +6,16 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class UsagePackageDate {
+    private int value;
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
     public static void main(String[] args) {
         LocalDate currentDate = LocalDate.now();
         System.out.println("Текущая дата: " + currentDate);
