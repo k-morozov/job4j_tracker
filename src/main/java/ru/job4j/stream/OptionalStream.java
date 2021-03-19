@@ -43,7 +43,8 @@ public class OptionalStream {
         return users.stream()
                 .filter(user -> user.getId() == id)
                 .map(User::getNumbers)
-                .flatMap(List::stream)
+                .flatMap(x -> x.stream())
+//                .flatMap(List::stream)
                 .filter(num -> num.getPhone().startsWith(region))
                 .collect(Collectors.toList());
 
